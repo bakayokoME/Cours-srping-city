@@ -39,7 +39,7 @@ public class CityRepositoryTest {
     }
 
     @Test
-    // L'entity "City" définit une contrainte sur la taille minimum du nom des villes
+        // L'entity "City" définit une contrainte sur la taille minimum du nom des villes
     void onVerifieLesContraintesDeValidation() {
         log.info("On vérifie que Spring honore les contraintes de validation");
         City city = new City();
@@ -51,7 +51,7 @@ public class CityRepositoryTest {
             fail("On doit avoir une violation de contrainte d'intégrité");
         } catch (ConstraintViolationException e) {
             log.info("On a reçu l'exception : " + e.getMessage());
-        }    
+        }
     }
 
 }
